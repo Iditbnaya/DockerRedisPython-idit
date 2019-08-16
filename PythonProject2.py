@@ -9,7 +9,7 @@ driver.implicitly_wait(20)
 # open website
 driver.get('http://192.168.99.100:5000/')
 #get all text in body
-html = driver.page_source
-print(html)
-# quit webdiver
+data = driver.find_element_by_xpath("/html/body").text
+print(data)
+#quit webdiver
 driver.quit()
