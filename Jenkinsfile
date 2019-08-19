@@ -1,14 +1,14 @@
 pipeline{
 agent any
 stages {    
-    stage('python') {
+    stage('compose') {
     steps{
 	    
 	    bat 'docker-compose up -d'
 
 	    }       
 	}
- stage('compose') {
+ stage('python') {
         steps{
           git 'https://github.com/Iditbnaya/DockerRedisPython-idit.git' 
 bat 'python PythonProject2.py'
