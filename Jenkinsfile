@@ -21,6 +21,8 @@ try {
 
 git 'https://github.com/Iditbnaya/DockerRedisPython-idit.git' 
 bat 'python' PythonProject2.py
+docker-compose up
+
 
 } catch (Exception e) { 
 
